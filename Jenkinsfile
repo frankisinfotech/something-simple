@@ -14,7 +14,7 @@ pipeline {
     }
     stage ('Uninstall maven') {
       steps {
-        sh 'sudo yum remove maven'
+        sh 'sudo yum remove maven -y'
       }
     }
   }
