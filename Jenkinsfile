@@ -7,9 +7,9 @@ pipeline {
         sh 'printenv'
       }
     }
-    stage ('Uninstall Git') {
+    stage ('install Git') {
       steps {
-        sh 'sudo yum remove git -y'
+        sh 'sudo yum install git -y'
       }
     }
     stage ('Uninstall maven') {
